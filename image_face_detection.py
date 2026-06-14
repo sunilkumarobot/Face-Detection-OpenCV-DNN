@@ -18,7 +18,7 @@ config_file = "models/deploy.prototxt"
 
 net=cv2.dnn.readNetFromCaffe(config_file,caffeModel)
 
-im=r"C:\Users\91850\Pictures\1.JPG"
+im=r"C:\Users\91850\Pictures\1.JPG" #Image Path 
 img=cv2.imread(im)
 plt.figure(figsize=[10,5])
 plt.imshow(img[:,:,::-1])
