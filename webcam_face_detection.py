@@ -8,8 +8,8 @@ import cv2
 import numpy as np
 
 # Load Model
-caffeModel = r"D:\Opencv oct-Nov\module_14\model\res10_300x300_ssd_iter_140000.caffemodel"
-config_file = r"D:\Opencv oct-Nov\module_14\model\deploy.prototxt"
+caffeModel=model_file = "models/res10_300x300_ssd_iter_140000_fp16.caffemodel"
+config_file = "models/deploy.prototxt"
 
 net = cv2.dnn.readNetFromCaffe(config_file, caffeModel)
 
