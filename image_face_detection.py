@@ -13,8 +13,8 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # In[64]:
 
 
-caffeModel=r"D:\Opencv oct-Nov\module_14\model\res10_300x300_ssd_iter_140000.caffemodel"
-config_file="D:\Opencv oct-Nov\module_14\model\deploy.prototxt"
+caffeModel=model_file = "models/res10_300x300_ssd_iter_140000_fp16.caffemodel"
+config_file = "models/deploy.prototxt"
 
 net=cv2.dnn.readNetFromCaffe(config_file,caffeModel)
 
